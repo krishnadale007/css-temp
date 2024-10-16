@@ -1,4 +1,3 @@
-css-temp-pipe
 pipeline{
     agent any
     stages{
