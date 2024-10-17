@@ -9,7 +9,7 @@ pipeline {
         stage('build in docker') {
             steps {
                 sh '''
-                docker build -t krishna/krishnadale .
+                docker build -t krishnadale/krishnadale .
                 '''
             }
         }
