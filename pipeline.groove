@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('pull'){
         steps{
-            git branch: 'main', url: 'https://github.com/krishnadale007/css-temp.git'
+            git branch: 'master', url: 'https://github.com/krishnadale007/css-temp.git'
         }
     }
     stage('build in docker'){
