@@ -12,15 +12,15 @@ pipeline{
         '''
         }
     }
-    stage('push docker hub'){
-        steps{
-            withDockerRegistry(credentialsId: 'docker-creds', url: 'https://hub.docker.com/repository/docker/') {
-            sh```
-            docker push krishna/krishnadale
-            ```
-            }   
+     stage('push docker hub') {
+            steps {
+                withDockerRegistry(credentialsId: 'docker-creds', url: 'https://hub.docker.com/') {
+                    sh '''
+                    docker push krishna/krishnadale
+                    '''
+                }
+            }
         }
-    }
 
     }
 }
