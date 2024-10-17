@@ -1,4 +1,4 @@
-pipeline{
+pipeline {
     agent any
     stages{
         stage('pull'){
@@ -18,12 +18,9 @@ pipeline{
             sh '''
             docker push krishna/krishnadale
             '''
-        }
-    }
-}
+       }   }   }
 
-            }
-        }
+}    }      
+          
+    
 
-    }
-}
