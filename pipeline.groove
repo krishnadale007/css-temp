@@ -18,7 +18,7 @@ pipeline {
                 script{
                     withDockerRegistry(credentialsId: 'docker-creds', url: 'https://index.docker.io/v1/') {
                     sh '''
-                    docker push krishna/krishnadale
+                    docker push krishnadale/krishnadale
                     '''
                     }
                 }   
