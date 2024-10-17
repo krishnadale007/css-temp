@@ -1,14 +1,13 @@
-css-temp-pipe
 pipeline{
     agent any
     stages{
-        stege('pull'){
+        stage('pull'){
         steps{
             git branch: 'main', url: 'https://github.com/krishnadale007/css-temp.git'
         }
     }
-    stege('build in docker'){
-    setps{
+    stage('build in docker'){
+    steps{
         sh '''docker build -t krishna/krishnadale .
         '''
         }
